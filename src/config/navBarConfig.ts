@@ -71,7 +71,7 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 				icon: "material-symbols:home",
 			},
 			{
-				name: "权芯365",
+				name: "权芯365主页",
 				url: "https://www.quanxin365.cn",
 				external: true,
 				icon: "material-symbols:language",
