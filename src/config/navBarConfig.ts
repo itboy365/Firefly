@@ -65,22 +65,16 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 		// 子菜单
 		children: [
 			{
-				name: "GitHub",
-				url: "https://github.com/CuteLeaf/Firefly",
+				name: "ITboy主页",
+				url: "https://itboy.pw",
 				external: true,
-				icon: "fa7-brands:github",
+				icon: "material-symbols:home",
 			},
 			{
-				name: "Gitee",
-				url: "https://gitee.com/CuteLeaf/Firefly",
+				name: "权芯365",
+				url: "https://www.quanxin365.cn",
 				external: true,
-				icon: "fa7-brands:gitee",
-			},
-			{
-				name: "QQ交流群",
-				url: "https://qm.qq.com/q/ZGsFa8qX2G",
-				external: true,
-				icon: "fa7-brands:qq",
+				icon: "material-symbols:language",
 			},
 		],
 	});
