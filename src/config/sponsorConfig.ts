@@ -10,7 +10,7 @@ export const sponsorConfig: SponsorConfig = {
 
 	// 赞助用途说明
 	usage:
-		"写点想说的，写点想写的小心思。如果偶尔有一两句说进了你心里，可以请我喝杯奶茶，就当是隔着屏幕，分享一份开心。",
+		"在人山人海的互联网中，能在这里遇见你，也是一种缘分。如果你觉得还行，可以请我喝杯奶茶。不请也没关系，你来过，我就已经很开心了！",
 
 	// 是否显示赞助者列表
 	showSponsorsList: true,
@@ -46,15 +46,15 @@ export const sponsorConfig: SponsorConfig = {
 	sponsors: [
 		// 示例：已实名赞助者
 		{
-			name: "夏叶",
+			name: "高达星",
 			amount: "¥50",
 			date: "2026-3-15",
 		},
 
-		// 示例：匿名赞助者
+		// 示例：微信赞助者
 		{
-			name: "匿名用户",
-			amount: "¥20",
+			name: "綦桐",
+			amount: "¥100",
 			date: "2025-12-13",
 		},
 	],
