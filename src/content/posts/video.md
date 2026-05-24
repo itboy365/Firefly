@@ -1,27 +1,50 @@
 ---
-title: 在文章中嵌入视频
-published: 1970-01-01
-description: 这篇文章演示如何在博客文章中嵌入视频。
-tags: [示例, 视频, Firefly]
-category: 文章示例
+title: ITboy 的由来
+published: 2026-05-01
+description: 我是谁，我为什么叫 ITboy，我为什么有个域名叫 itboy.pw。
+tags: [关于我, ITboy]
+category: 生活
 draft: false
 ---
 
-只需从 YouTube 或其他平台复制嵌入代码，然后将其粘贴到 markdown 文件中。
+## 为什么叫 ITboy？
 
-```yaml
----
-title: 在文章中嵌入视频
-published: 2023-10-19
-// ...
----
+这个问题其实挺简单的。
 
-<iframe width="100%" height="468" src="https://www.youtube.com/embed/5gIf0_xpFPI?si=N1WTorLKL0uwLsU_" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-```
-## YouTube
+　　"ITboy"这个名字，是我给自己取的网名。从上学那会儿接触计算机开始，我就觉得自己跟互联网这个东西有种说不清的缘分。算不上多厉害，就是单纯觉得好玩、有趣。
 
-<iframe width="100%" height="468" src="https://www.youtube.com/embed/5gIf0_xpFPI?si=N1WTorLKL0uwLsU_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+　　IT 代表互联网、计算机。boy 代表男孩。合起来就是"一个喜欢互联网的男孩"。
 
-## Bilibili
+　　至于为什么叫这个？可能因为念起来顺口或者看着顺眼吧。
 
-<iframe width="100%" height="468" src="//player.bilibili.com/player.html?bvid=BV1fK4y1s7Qf&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" &autoplay=0> </iframe>
+## 为什么注册 itboy.pw？
+
+　　`.pw` 是帕劳的国别域名，但在我眼里，它更像是 "Personal Website"——个人网站。
+
+　　itboy.pw，就是"ITboy 的个人网站"。
+
+　　注册它的时候没想太多，就觉得这个域名短、好记，而且刚好跟我的网名对得上。后来备案也过了，就正式成了我在互联网上的一个小角落。
+
+## 我是谁？
+
+　　我是90后，河北保定人。
+
+　　16年进了东北农业大学，学的是计算机科学与技术，20年毕的业。
+
+　　大学那会儿，有了自己的电脑，第一次知道原来网页是这么"造"出来的。从那时候开始捣鼓 HTML、CSS，后来又接触了 PHP。毕业后也没停下来，每年都会去折腾一些新的东西。Python、静态博客、域名备案……学得不快，但一直在学。
+
+　　毕业后也没合适对口的工作，具体干什么，留着以后慢慢聊。
+
+　　互联网对我来说，不是饭碗，是玩具。
+
+## 这个博客想写什么？
+
+　　之前折腾过不少东西。接触过 WordPress，用过云服务器，写过 PHP 博客，也弄过纯 HTML 的静态页面。
+
+　　现在这个博客，从底层框架到部署架构，都是自己选的。静态生成、Git 版本管理、自动构建部署、全球 CDN 分发——这套方案从零搭建到稳定运行，踩了不少坑，也学了不少东西。技术栈不算复杂，但考验的是耐心和细节。
+
+　　写什么？写生活、写想法、写折腾的过程。
+
+　　不写技术教程，不写高深的东西。
+
+　　就是**一个公开的朋友圈**。
