@@ -3,7 +3,7 @@ title: 我的朋友圈，停在去年七月
 published: 2026-04-12
 description: 从2025年7月开始，我再也没有更新过朋友圈。不是发生了什么，就是不想发了。
 tags: [关于我, 朋友圈, 表达, 生活]
-category: 想法
+category: 表达
 draft: false
 ---
 
