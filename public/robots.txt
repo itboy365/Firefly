@@ -1,87 +1,112 @@
 # ============================================================
 # robots.txt - ITboy 个人博客
-# 最后更新: 2026-05-24 (请替换为今天的日期)
+# 最后更新: 2026-05-24（每次修改后更新此日期）
 # ============================================================
 
 # -------- 站点地图 --------
-Sitemap: https://itboy.pw/sitemap-index.xml
+# 告诉所有爬虫站点地图的位置
+Sitemap: https://blog.itboy.pw/sitemap-index.xml
 
-# -------- 1. 欢迎所有主流搜索引擎（朋友）--------
+# -------- 欢迎主流搜索引擎（朋友）--------
+# 这些是帮你引流量的搜索引擎爬虫，必须热烈欢迎
+
+# 百度搜索
 User-agent: Baiduspider
 Allow: /
 Crawl-delay: 1
 
+# 谷歌搜索
 User-agent: Googlebot
 Allow: /
 
+# 微软必应搜索
 User-agent: Bingbot
 Allow: /
 
+# 360搜索
 User-agent: 360Spider
 Allow: /
 Crawl-delay: 2
 
+# 搜狗搜索
 User-agent: Sogou web spider
 Allow: /
 Crawl-delay: 2
 
+# 神马搜索（移动端市场份额较大）
 User-agent: YisouSpider
 Allow: /
 Crawl-delay: 2
 
-# 欢迎其他所有未提及的搜索引擎
+# DuckDuckGo（注重隐私的海外搜索引擎）
 User-agent: DuckDuckBot
 Allow: /
+
+# Yandex（俄罗斯最大搜索引擎）
 User-agent: YandexBot
 Allow: /
 
-# -------- 2. 特殊爬虫：需单独规则（朋友的特例）--------
-# AdsBot 会忽略全局规则，必须为其单独设置Allow
+# -------- 特殊爬虫：需单独设置（朋友的特例）--------
+# AdsBot 会忽略全局规则，必须单独写 Allow
 User-agent: AdsBot-Google
 Allow: /
 
-# -------- 3. 屏蔽不希望抓取的爬虫（需审视的过客 & 复杂的路人）--------
-# 这是一份混合名单，其中AI爬虫消耗资源且不带来流量，SEO工具爬虫仅用于商业分析。
-# 如果你将来想对AI搜索开放，可以在对应的行首加"#"注释掉。
+# -------- 屏蔽 AI 训练爬虫（需审视的过客）--------
+# 这些爬虫抓取你的内容用于训练大模型，不会给你带来流量
+# 如果你想对某个 AI 搜索开放，在对应行前面加 # 注释掉即可
 
+# OpenAI 的数据训练爬虫（ChatGPT）
 User-agent: GPTBot
 Disallow: /
 
+# Anthropic 的爬虫（Claude）
 User-agent: Claude-Web
 Disallow: /
 
+# Common Crawl 数据集爬虫（很多 AI 公司使用）
 User-agent: CCBot
 Disallow: /
 
+# 谷歌 AI 训练爬虫（Gemini）
 User-agent: Google-Extended
 Disallow: /
 
+# Anthropic 旧版爬虫标识
 User-agent: anthropic-ai
 Disallow: /
 
+# -------- 屏蔽商业 SEO 工具爬虫（复杂的路人）--------
+# 这些爬虫用于商业分析和营销，不给你的网站带来实际流量
+
+# Ahrefs SEO 工具
 User-agent: AhrefsBot
 Disallow: /
 
+# Semrush SEO 工具
 User-agent: SemrushBot
 Disallow: /
 
+# DotBot（营销爬虫）
 User-agent: DotBot
 Disallow: /
 
+# BLEXBot（营销爬虫）
 User-agent: BLEXBot
 Disallow: /
 
+# Zoominfo（商业数据采集）
 User-agent: ZoominfoBot
 Disallow: /
 
+# MJ12bot（链接分析爬虫）
 User-agent: MJ12bot
 Disallow: /
 
+# Omgili（舆情监测爬虫）
 User-agent: Omgili
 Disallow: /
 
-# -------- 4. 默认规则：允许所有未提及的爬虫 --------
-# 这是兜底规则，确保不会误伤其他潜在的有益爬虫。
-# 任何未被上方“屏蔽”规则匹配的爬虫，都将被允许访问。
+# -------- 默认规则：允许所有未被上述规则匹配的爬虫 --------
+# 这是一个兜底规则，确保不会误伤其他有益的爬虫
 User-agent: *
 Allow: /
