@@ -1,6 +1,6 @@
 ---
 title: ITboy 的由来
-published: 2026-05-01
+published: 2026-01-02
 description: 我是谁，我为什么叫 ITboy，我为什么有个域名叫 itboy.pw。
 tags: [关于我, ITboy]
 category: 生活
