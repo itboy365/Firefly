@@ -1,6 +1,6 @@
 ---
 title: 博客和微博，不是一回事
-published: 2026-05-10
+published: 2026-03-18
 description: 我为什么选择写博客，而不是只在微博或朋友圈里发东西。
 tags: [思考, 博客, 表达]
 category: 想法
