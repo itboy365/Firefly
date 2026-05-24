@@ -28,21 +28,17 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 		links.push(LinkPreset.Guestbook);
 	}
 
+	// 根据配置决定是否添加赞助，在siteConfig关闭pages.sponsor时导航栏不显示赞助
+	if (siteConfig.pages.sponsor) {
+		links.push(LinkPreset.Sponsor);
+	}
+
 	// 关于及其子菜单
 	links.push({
 		name: "关于",
 		url: "/content/",
 		icon: "material-symbols:info",
 		children: [
-			// 标签页（从“我的”移过来）
-			{
-				name: "标签",
-				url: "/tags/",
-				icon: "material-symbols:label",
-			},
-			// 根据配置决定是否添加赞助，在siteConfig关闭pages.sponsor时导航栏不显示赞助
-			...(siteConfig.pages.sponsor ? [LinkPreset.Sponsor] : []),
-
 			// 关于页面
 			LinkPreset.About,
 		],
