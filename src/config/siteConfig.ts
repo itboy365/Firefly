@@ -7,25 +7,24 @@ const SITE_LANG = "zh_CN";
 
 export const siteConfig: SiteConfig = {
 	// 站点标题
-	title: "ITboy",
+	title: "ITboy 的小基地",
 
 	// 站点副标题
-	subtitle: "一个90后保定小伙的杂七杂八生活笔记",
+	subtitle: "说点想说的，写点想写的小心思",
 
 	// 站点 URL
 	site_url: "https://blog.itboy.pw",
 
 	// 站点描述
 	description:
-		"我是itboy，一个来自河北保定的90后小伙砸。没啥高深技术，就是爱好瞎折腾，喜欢鼓捣各种有趣好玩的东西。这里是我的互联网基地，记录些杂七杂八的生活笔记和技术踩坑记录。",
+		"一个保定90后的互联网小基地，说点想说的，写点想写的小心思。",
 
 	// 站点关键词
 	keywords: [
 		"ITboy",
 		"个人博客",
-		"技术",
 		"生活",
-		"折腾",
+		"思考",
 	],
 
 	// 主题色
@@ -77,7 +76,7 @@ export const siteConfig: SiteConfig = {
 			alt: "🍀",
 		},
 		// 导航栏标题
-		title: "ITboy",
+		title: "ITboy 的小基地",
 		// 全宽导航栏，导航栏是否占满屏幕宽度
 		widthFull: false,
 		// 导航菜单对齐方式，left：左对齐，center：居中
