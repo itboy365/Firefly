@@ -3,7 +3,7 @@ title: 朋友两个字，其实挺沉的
 published: 2026-05-15
 description: 曾经有两千多个微信好友，后来发现，能说上话的没几个。不是谁不好，是朋友这两个字，本来就不该轻。
 tags: [关于我, 朋友, 务实, 生活]
-category: 想法
+category: 表达
 draft: false
 ---
 
