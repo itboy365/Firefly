@@ -14,23 +14,39 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 		// 主页
 		LinkPreset.Home,
 
-		// 归档
-		LinkPreset.Archive,
+		// 时光 (手动重写，替换掉 LinkPreset.Archive)
+		{
+			name: "时光",
+			url: "/archive/",
+			icon: "material-symbols:archive",
+		},
 	];
 
 	// 根据配置决定是否添加友链，在siteConfig关闭pages.friends时导航栏不显示友链
 	if (siteConfig.pages.friends) {
-		links.push(LinkPreset.Friends);
+		links.push({
+			name: "友链",
+			url: "/friends/",
+			icon: "material-symbols:link",
+		});
 	}
 
 	// 根据配置决定是否添加留言板，在siteConfig关闭pages.guestbook时导航栏不显示留言板
 	if (siteConfig.pages.guestbook) {
-		links.push(LinkPreset.Guestbook);
+		links.push({
+			name: "留言",
+			url: "/guestbook/",
+			icon: "material-symbols:chat",
+		});
 	}
 
-	// 根据配置决定是否添加赞助，在siteConfig关闭pages.sponsor时导航栏不显示赞助
+	// 根据配置决定是否添加打赏，在siteConfig关闭pages.sponsor时导航栏不显示打赏
 	if (siteConfig.pages.sponsor) {
-		links.push(LinkPreset.Sponsor);
+		links.push({
+			name: "打赏",
+			url: "/sponsor/",
+			icon: "material-symbols:coffee",
+		});
 	}
 
 	// 关于及其子菜单
@@ -44,9 +60,9 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 		],
 	});
 
-	// 自定义导航栏链接,并且支持多级菜单
+	// 指路 (自定义导航栏链接)
 	links.push({
-		name: "链接",
+		name: "指路",
 		url: "/links/",
 		icon: "material-symbols:link",
 
