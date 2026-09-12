@@ -9,6 +9,7 @@ passwordHint: "示例文章密码123456"
 slug: encrypted-demo
 series: "Firefly 功能示例"
 seriesOrder: 6
+draft: true
 ---
 
 ## 成功解锁了这篇文章！
@@ -26,7 +27,7 @@ seriesOrder: 6
 
 ## 图片
 
-![Firefly](./images/1.avif)
+![萤火虫](./images/1.avif)
 
 ## GitHub 仓库卡片
 
