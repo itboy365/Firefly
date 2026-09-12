@@ -42,26 +42,26 @@ const pages = resolvePageToggles({
 
 export const siteConfig: SiteConfig = {
 	// 站点标题
-	title: "Firefly",
+	title: "权芯365的小基地",
 
 	// 站点副标题
-	subtitle: "Demo site",
+	subtitle: "说点想说的，写点想写的小心思",
 
 	// 站点 URL
-	site_url: "https://firefly.cuteleaf.cn",
+	site_url: "https://blog.quanxin365.cn",
 
 	// 站点描述
 	description:
-		"Firefly 是一款基于 Astro 框架和 Fuwari 模板开发的清新美观且现代化个人博客主题模板，专为技术爱好者和内容创作者设计。该主题融合了现代 Web 技术栈，提供了丰富的功能模块和高度可定制的界面，让您能够轻松打造出专业且美观的个人博客网站。",
+		"一个保定90后的互联网小基地，说点想说的，写点想写的小心思。专为技术爱好者和内容创作者设计。该主题融合了现代 Web 技术栈，提供了丰富的功能模块和高度可定制的界面，让您能够轻松打造出专业且美观的个人博客网站。",
 
 	// 站点关键词
 	keywords: [
-		"Firefly",
-		"Fuwari",
+		"权芯365",
+		"记录生活",
+		"思考生活",
 		"Astro",
-		"ACGN",
 		"博客",
-		"技术博客",
+		"个人博客",
 		"静态博客",
 	],
 
@@ -117,7 +117,7 @@ export const siteConfig: SiteConfig = {
 			alt: "🍀",
 		},
 		// 导航栏标题
-		title: "Firefly Blog",
+		title: "权芯365的小基地",
 		// 全宽导航栏，导航栏是否占满屏幕宽度
 		widthFull: false,
 		// 导航菜单对齐方式，left：左对齐，center：居中
@@ -132,7 +132,7 @@ export const siteConfig: SiteConfig = {
 	},
 
 	// 站点开始日期，用于统计运行天数
-	siteStartDate: "2025-01-01",
+	siteStartDate: "2026-07-01",
 
 	// 站点时区（IANA 时区字符串），用于格式化bangumi、rss里的构建日期时间等等..
 	// 示例："Asia/Shanghai", "UTC", 如果为空，则按照构建服务器的时区进行时区转换
@@ -260,42 +260,52 @@ export const siteConfig: SiteConfig = {
 	},
 
 	// ── Bilibili配置 ──────────────────────────────────
+	// 作用：开启后会在博客生成“哔哩哔哩追番”页面，展示你 B 站账号公开的追番列表。
+	// 如何配置：
+	//   1. 在顶部 pages 中将 bilibili 设为 true。
+	//   2. 在此处填写你的 B 站用户 UID（不是昵称，是主页网址里的数字）。
+	// 示例：uid: "12345678"
+	// 注意：不需要此页面时，请保持 pages.bilibili 为 false，并将 uid 留空。
 	bilibili: {
 		// 你的 Bilibili 用户 UID
-		uid: "38932988",
+		uid: "",
 	},
 
 	// ── 番组计划bangumi配置 ──────────────────────────────────
+	// 作用：开启后会在博客生成“番组计划”页面，展示你的 Bangumi 收藏（动画、书籍、音乐、游戏等）。
+	// 如何配置：
+	//   1. 在顶部 pages 中将 bangumi 设为 true。
+	//   2. 填写你的 Bangumi 用户 ID（在个人主页网址中查找）。
+	//   3. mode 可选 "static"（构建时获取，部署后不更新）或 "dynamic"（浏览器实时获取，始终最新）。
+	// 示例：userId: "123456", mode: "dynamic"
+	// 注意：不需要此页面时，请保持 pages.bangumi 为 false，并将 userId 留空。
 	bangumi: {
 		// Bangumi用户ID
-		userId: "1143164",
+		userId: "",
 		// 数据模式：static=构建时获取，dynamic=客户端实时获取
-		// static 模式在构建时获取数据并静态渲染，部署后数据不更新
-		// dynamic 模式在浏览器中实时请求 API，始终显示最新数据
 		mode: "dynamic",
 		// Bangumi API 地址
 		apiUrl: "https://api.bangumi.pro",
 		// 详情页地址
 		subjectBaseUrl: "https://api.bangumi.pro/subject/",
 		// 条目类型排序，数组中的类型将按顺序优先展示
-		// 可选值: "anime" | "book" | "music" | "game" | "real" (暂不支持"real"类型)
-		// 未列出的类型将按默认顺序排在后面
 		categoryOrder: ["anime", "book", "music", "game"],
-		// 控制各分类的启用状态（true/false），未指定的分类默认启用
-		// categories: {
-		// 	game: false, // 禁用游戏分类显示
-		// },
 		// NSFW 处理："off" 不过滤 | "blur" 仅模糊封面 | "hide" 隐藏条目
 		nsfw: "hide",
 	},
 
 	// ── VNDB配置 ──────────────────────────────────
+	// 作用：开启后会在博客生成“VNDB”页面，展示你的视觉小说收藏列表。
+	// 如何配置：
+	//   1. 在顶部 pages 中将 vndb 设为 true。
+	//   2. 填写你的 VNDB 用户 ID（例如 u123456）。
+	//   3. 如果列表是私密的，需要在 apiToken 中填写访问令牌（不要提交到公开仓库）。
+	// 示例：userId: "u123456", mode: "static"
+	// 注意：不需要此页面时，请保持 pages.vndb 为 false，并将 userId 留空。
 	vndb: {
 		// VNDB 用户 ID
-		userId: "u358128",
+		userId: "",
 		// 数据模式：static=构建时获取，dynamic=客户端实时获取
-		// static 模式在构建时获取数据并静态渲染，部署后数据不更新
-		// dynamic 模式在浏览器中实时请求 API，始终显示最新数据
 		mode: "static",
 		// 构建时下载并压缩封面到 public/vndb-covers，图片由本站服务器提供
 		downloadCovers: false,
@@ -310,11 +320,18 @@ export const siteConfig: SiteConfig = {
 	},
 
 	// ── MyAnimeList配置 ──────────────────────────────────
+	// 作用：开启后会在博客生成“MyAnimeList”页面，展示你的动画和漫画收藏。
+	// 如何配置：
+	//   1. 在顶部 pages 中将 mal 设为 true。
+	//   2. 填写你的 MAL 用户名（列表需为公开状态）。
+	//   3. 去 https://myanimelist.net/apiconfig 注册免费应用，获取 Client ID 并填入。
+	// 示例：username: "yourname", clientId: "xxxxxxxx"
+	// 注意：不需要此页面时，请保持 pages.mal 为 false，并将 username、clientId 留空。
 	mal: {
 		// MyAnimeList 用户名（列表需为公开状态，私密列表无法读取）
-		username: "cuteleaf",
+		username: "",
 		// MyAnimeList Client ID，在 https://myanimelist.net/apiconfig 注册免费应用后获取
-		clientId: "	0ef34371450f9c6c809deaadec6aa8f3",
+		clientId: "",
 		// MAL API 地址
 		apiUrl: "https://api.myanimelist.net/v2",
 		// 动画条目详情页地址，末尾需要带 /
