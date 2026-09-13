@@ -1,6 +1,6 @@
- type { SiteConfig } from "@/types/siteConfig";
-import { resolvePageToggles } from "../utils/page-toggle-utils";
-import { resolveSiteLang } from "../utils/site-config-utils";
+ 类型 { SiteConfig } 来自 "@/types/siteConfig";
+导入 { resolvePageToggles } 自 "../utils/page-toggle-utils";
+导入 { resolveSiteLang } 自 "../utils/site-config-utils";
 
 // 定义站点语言
 // 语言代码，例如：'zh_CN', 'zh_TW', 'en', 'ja', 'ru', 'ko'。
@@ -59,8 +59,8 @@ export const siteConfig: SiteConfig = {
 		"权芯365",
 		"记录生活",
 		"思考生活",
-,
 		"博客"
+		"Astro",
 		"个人博客",
 		"静态博客",
 	],
@@ -117,7 +117,7 @@ export const siteConfig: SiteConfig = {
 			alt: "🍀",
 		},
 		// 导航栏标题
-		title: "我的小网站",
+		title: "权芯365",
 		// 全宽导航栏，导航栏是否占满屏幕宽度
 		widthFull: false,
 		// 导航菜单对齐方式，left：左对齐，center：居中
