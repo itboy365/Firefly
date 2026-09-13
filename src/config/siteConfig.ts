@@ -1,6 +1,6 @@
- 类型 { SiteConfig } 来自 "@/types/siteConfig";
-导入 { resolvePageToggles } 自 "../utils/page-toggle-utils";
-导入 { resolveSiteLang } 自 "../utils/site-config-utils";
+import type { SiteConfig } from "@/types/siteConfig";
+import { resolvePageToggles } from "../utils/page-toggle-utils";
+import { resolveSiteLang } from "../utils/site-config-utils";
 
 // 定义站点语言
 // 语言代码，例如：'zh_CN', 'zh_TW', 'en', 'ja', 'ru', 'ko'。
@@ -11,18 +11,18 @@ const pages = resolvePageToggles({
 	// ── 社交 (Social) ──────────────────────────────────
 
 	// 友链页面开关
-	朋友: false,
+	friends: false,
 	// 留言板页面开关，需要配置评论系统
-	访客留言: true,
+	guestbook: true,
 
 	// ── 我的 (My) ──────────────────────────────────
 
 	// 动态页面开关
-	动态: false,
+	dynamic: false,
 	// 项目展示页开关
-	项目: false,
+	projects: false,
 	// 相册页面开关
-	图库: false,
+	gallery: false,
 	// 书签导航页面开关
 	booknav: true,
 	// 哔哩哔哩追番页面开关
@@ -59,7 +59,7 @@ export const siteConfig: SiteConfig = {
 		"权芯365",
 		"记录生活",
 		"思考生活",
-		"博客"
+		"博客",
 		"Astro",
 		"个人博客",
 		"静态博客",
