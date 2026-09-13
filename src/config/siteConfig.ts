@@ -1,4 +1,4 @@
-import type { SiteConfig } from "@/types/siteConfig";
+ type { SiteConfig } from "@/types/siteConfig";
 import { resolvePageToggles } from "../utils/page-toggle-utils";
 import { resolveSiteLang } from "../utils/site-config-utils";
 
@@ -11,18 +11,18 @@ const pages = resolvePageToggles({
 	// ── 社交 (Social) ──────────────────────────────────
 
 	// 友链页面开关
-	friends: false,
+	朋友: false,
 	// 留言板页面开关，需要配置评论系统
-	guestbook: true,
+	访客留言: true,
 
 	// ── 我的 (My) ──────────────────────────────────
 
 	// 动态页面开关
-	dynamic: false,
+	动态: false,
 	// 项目展示页开关
-	projects: false,
+	项目: false,
 	// 相册页面开关
-	gallery: false,
+	图库: false,
 	// 书签导航页面开关
 	booknav: true,
 	// 哔哩哔哩追番页面开关
@@ -59,8 +59,8 @@ export const siteConfig: SiteConfig = {
 		"权芯365",
 		"记录生活",
 		"思考生活",
-		"Astro",
-		"博客",
+,
+		"博客"
 		"个人博客",
 		"静态博客",
 	],
@@ -117,7 +117,7 @@ export const siteConfig: SiteConfig = {
 			alt: "🍀",
 		},
 		// 导航栏标题
-		title: "权芯365",
+		title: "我的小网站",
 		// 全宽导航栏，导航栏是否占满屏幕宽度
 		widthFull: false,
 		// 导航菜单对齐方式，left：左对齐，center：居中
