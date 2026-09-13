@@ -65,9 +65,9 @@ export const booknavConfig: BooknavGroup[] = [
 	},
 	{
 		id: "life",
-		name: "国家生活",
+		name: "生活服务",
 		icon: "material-symbols:home-outline-rounded",
-		desc: "日常生活常用的官方服务",
+		desc: "日常生活高频官方服务",
 		weight: 90,
 		items: [
 			{
@@ -94,6 +94,57 @@ export const booknavConfig: BooknavGroup[] = [
 				desc: "学历学籍信息查询",
 				weight: 7,
 			},
+			{
+				title: "国家邮政局申诉网站",
+				url: "https://sswz.spb.gov.cn",
+				desc: "快递投诉与申诉",
+				weight: 6,
+			},
+			{
+				title: "全国12315平台",
+				url: "https://www.12315.cn",
+				desc: "消费维权与投诉举报",
+				weight: 5,
+			},
+		],
+	},
+	{
+		id: "query",
+		name: "便民查询",
+		icon: "material-symbols:manage-search-rounded",
+		desc: "低频但重要的官方查询入口",
+		weight: 80,
+		items: [
+			{
+				title: "国家企业信用信息公示系统",
+				url: "https://www.gsxt.gov.cn",
+				desc: "查公司背景与经营状况",
+				weight: 10,
+			},
+			{
+				title: "信用中国",
+				url: "https://www.creditchina.gov.cn",
+				desc: "信用记录与红黑名单查询",
+				weight: 9,
+			},
+			{
+				title: "中国法律服务网",
+				url: "https://12348.moj.gov.cn",
+				desc: "法律咨询与法律援助",
+				weight: 8,
+			},
+			{
+				title: "国家药监局",
+				url: "https://www.nmpa.gov.cn",
+				desc: "药品、化妆品、医疗器械查询",
+				weight: 7,
+			},
+			{
+				title: "全国增值税发票查验平台",
+				url: "https://inv-veri.chinatax.gov.cn",
+				desc: "发票真伪查验",
+				weight: 6,
+			},
 		],
 	},
 	{
@@ -101,7 +152,7 @@ export const booknavConfig: BooknavGroup[] = [
 		name: "搜索引擎",
 		icon: "material-symbols:search-rounded",
 		desc: "国内外常用搜索引擎",
-		weight: 80,
+		weight: 70,
 		items: [
 			{
 				title: "百度",
