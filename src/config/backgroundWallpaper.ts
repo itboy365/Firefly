@@ -78,10 +78,10 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 			titleSize: "4.5rem",
 			// 主页横幅副标题
 			subtitle: [
-				"欢迎来到我的互联网小基地。",
+				"欢迎来到我的互联网小基地",
 				"一个90后保定小伙的互联网角落",
-				"说点想说的，写点想写的小心思。",
-				"愿你、我、ta都能在平凡的日子里，找到属于自己的光。",
+				"说点想说的，写点想写的小心思",
+				"愿你、我、ta都能在平凡的日子里，找到属于自己的光",
 			],
 			// 主页横幅副标题字体大小
 			subtitleSize: "1.5rem",
