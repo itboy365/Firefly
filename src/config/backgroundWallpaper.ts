@@ -73,17 +73,15 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 			// 是否启用主页横幅文字
 			enable: true,
 			// 主页横幅主标题
-			title: "Lovely firefly!",
+			title: "权芯365",
 			// 主页横幅主标题字体大小
 			titleSize: "4.5rem",
 			// 主页横幅副标题
 			subtitle: [
-				"In Reddened Chrysalis, I Once Rest",
-				"From Shattered Sky, I Free Fall",
-				"Amidst Silenced Stars, I Deep Sleep",
-				"Upon Lighted Fyrefly, I Soon Gaze",
-				"From Undreamt Night, I Thence Shine",
-				"In Finalized Morrow, I Full Bloom",
+				"欢迎来到我的互联网小基地。",
+				"一个90后保定小伙的互联网角落",
+				"说点想说的，写点想写的小心思。",
+				"愿你、我、ta都能在平凡的日子里，找到属于自己的光。",
 			],
 			// 主页横幅副标题字体大小
 			subtitleSize: "1.5rem",
@@ -105,20 +103,14 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 			// 图标支持 Iconify 格式：fa7-brands:github、fa7-solid:envelope、mdi:rss 等
 			links: [
 				{
-					name: "GitHub",
-					icon: "fa7-brands:github",
-					url: "https://github.com/CuteLeaf/Firefly",
-					showName: true,
-				},
-				{
 					name: "Email",
 					icon: "fa7-solid:envelope",
-					url: "mailto:xiaye@msn.com",
+					url: "mailto:me@jiaquan.top",
 				},
 				{
 					name: "Sponsor",
 					icon: "material-symbols:favorite",
-					url: "https://blog.cuteleaf.cn/sponsor/",
+					url: "https://blog.quanxin365.cn/sponsor",
 				},
 				{
 					name: "RSS",
